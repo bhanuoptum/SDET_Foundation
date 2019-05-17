@@ -4,25 +4,10 @@
   	<listeners>
 		<listener class-name="assignment_Question2.TestNG_Listeners" />
 	</listeners>
-
-	<test name="login Page">
-			<classes>
-			<class name="testScenarios.LoginPage_Validation" />
-		</classes>
-	</test>
-		<test name="Directory Page">
-			<classes>
-			<class name="testScenarios.DirectoryPage_Validation" />
-		</classes>
-	</test>
+ <parameter name ="browser" value ="Chrome"/>
 	<test name="Admin Page">
 			<classes>
 			<class name="testScenarios.AdminPage_Validation" />
-		</classes>
-	</test>
-			<test name="AssignLeave Page">
-			<classes>
-			<class name="testScenarios.AssignLeave_Validation" />
 		</classes>
 	</test>
 	</suite> <!-- Suite -->
