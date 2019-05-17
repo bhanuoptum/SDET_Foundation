@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="assignment_Question2.TestNG_Listeners"/>
+  </listeners>
+  <test name="Admin Page(failed)">
+    <classes>
+      <class name="testScenarios.AdminPage_Validation">
+        <methods>
+          <include name="setUp"/>
+          <include name="Admin_Search"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testScenarios.AdminPage_Validation -->
+    </classes>
+  </test> <!-- Admin Page(failed) -->
+</suite> <!-- Failed suite [Suite] -->
