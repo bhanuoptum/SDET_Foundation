@@ -8,7 +8,7 @@ public class TestSuperClass {
 		        SubClass_Bike mb = new SubClass_Bike(3, 100, 25); 
 		        System.out.println(mb.toString()); 
 		        
-		    	        System.out.println("Apply Break with speed of  " + mb.applyBrake(3));
+		    	        System.out.println("Apply Break with speed of  " + mb.applyBrake(20));
 		              
 		    } 
 		} 

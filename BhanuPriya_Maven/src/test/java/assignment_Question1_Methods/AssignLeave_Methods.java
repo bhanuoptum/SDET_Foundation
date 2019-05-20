@@ -82,9 +82,16 @@ public class AssignLeave_Methods {
 		 sel.selectByIndex(index);
 	}
 	
+	public void setEMPName(String name)
+	{
+		employeename.clear();
+		employeename.sendKeys(name);
+	}
+	
 	/*This method is used to enter details on Assign Leave page and submit Assign*/
-	public void AssignLeavePage() throws InterruptedException{
-		employeename.sendKeys("Joseph User");
+	public void AssignLeavePage(String empName) throws InterruptedException{
+		//employeename.sendKeys("Joseph User");
+		setEMPName(empName);
 		Thread.sleep(2000);
 		SelectByIndex(leavetype,1);
 		Thread.sleep(2000);

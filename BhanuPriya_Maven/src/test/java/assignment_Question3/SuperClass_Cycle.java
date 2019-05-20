@@ -30,7 +30,7 @@ public class SuperClass_Cycle {
 	    { 
 	        return("No of gears are "+gear 
 	                +"\n"
-	                + "speed of bicycle is "+speed); 
+	                + "Speed of bicycle is "+speed); 
 	    }  
 	} 
 

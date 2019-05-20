@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testScenarios.AdminPage_Validation" hash-for-method="Admin_Search">Admin_Search</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="assignment_Question1.AdminPage_Validation" hash-for-method="Admin_Search">Admin_Search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="assignment_Question1.AssignLeave_Validation" hash-for-method="AssignLeave">AssignLeave</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="assignment_Question1.DirectoryPage_Validation" hash-for-method="Directory_Search">Directory_Search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="assignment_Question1.LoginPage_Validation" hash-for-method="Login_Test">Login_Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -120,7 +135,37 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testScenarios.AdminPage_Validation</span>
+              <span class="class-name">assignment_Question1.LoginPage_Validation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_Test">
+                  </a> <!-- Login_Test -->
+                  <span class="method-name">Login_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">assignment_Question1.DirectoryPage_Validation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Directory_Search">
+                  </a> <!-- Directory_Search -->
+                  <span class="method-name">Directory_Search</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">assignment_Question1.AdminPage_Validation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -128,6 +173,21 @@
                   <a name="Admin_Search">
                   </a> <!-- Admin_Search -->
                   <span class="method-name">Admin_Search</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">assignment_Question1.AssignLeave_Validation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssignLeave">
+                  </a> <!-- AssignLeave -->
+                  <span class="method-name">AssignLeave</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -146,11 +206,26 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;assignment_Question2.TestNG_Listeners&quot;/&gt;
   &lt;/listeners&gt;
+  &lt;test name=&quot;Login Page&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;assignment_Question1.LoginPage_Validation&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Page --&gt;
+  &lt;test name=&quot;Directory Page&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;assignment_Question1.DirectoryPage_Validation&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Directory Page --&gt;
   &lt;test name=&quot;Admin Page&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testScenarios.AdminPage_Validation&quot;/&gt;
+      &lt;class name=&quot;assignment_Question1.AdminPage_Validation&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Admin Page --&gt;
+  &lt;test name=&quot;AssignLeave Page&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;assignment_Question1.AssignLeave_Validation&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AssignLeave Page --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,7 +237,16 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
+                <span class="test-name">Login Page (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Directory Page (1 class)</span>
+              </li>
+              <li>
                 <span class="test-name">Admin Page (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AssignLeave Page (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,16 +272,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Admin_Search')
-data.setCell(0, 2, 'testScenarios.AdminPage_Validation')
-data.setCell(0, 3, 18510);
+data.setCell(0, 1, 'AssignLeave')
+data.setCell(0, 2, 'assignment_Question1.AssignLeave_Validation')
+data.setCell(0, 3, 24411);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Admin_Search')
+data.setCell(1, 2, 'assignment_Question1.AdminPage_Validation')
+data.setCell(1, 3, 16159);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Directory_Search')
+data.setCell(2, 2, 'assignment_Question1.DirectoryPage_Validation')
+data.setCell(2, 3, 12247);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Login_Test')
+data.setCell(3, 2, 'assignment_Question1.LoginPage_Validation')
+data.setCell(3, 3, 4646);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 57 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -223,18 +319,63 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testScenarios.AdminPage_Validation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">assignment_Question1.LoginPage_Validation</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">Admin_Search</span>
-                <span class="method-start">19216 ms</span>
+                <span class="method-name">Login_Test</span>
+                <span class="method-start">18581 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">37729 ms</span>
+                <span class="method-start">23229 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">assignment_Question1.DirectoryPage_Validation</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(Chrome)</span>
+                <span class="method-start">25796 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Directory_Search</span>
+                <span class="method-start">42009 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">54257 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">assignment_Question1.AdminPage_Validation</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(Chrome)</span>
+                <span class="method-start">56635 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Admin_Search</span>
+                <span class="method-start">72412 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">88572 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">assignment_Question1.AssignLeave_Validation</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(Chrome)</span>
+                <span class="method-start">90969 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">AssignLeave</span>
+                <span class="method-start">107406 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">131818 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

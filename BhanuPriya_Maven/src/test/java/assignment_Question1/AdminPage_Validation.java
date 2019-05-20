@@ -17,7 +17,7 @@ public class AdminPage_Validation extends BaseClass {
 		Admin_Methods ad = new Admin_Methods(driver);
 		
 		System.out.println("Call Search Admin Method");
-				ad.SearchAdmin();
+				ad.SearchAdmin(adminname);
 			
 		System.out.println("Reset button");		
 				//ad.ResetAdmin();

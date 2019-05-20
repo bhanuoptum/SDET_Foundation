@@ -7,7 +7,7 @@ import assignment_Question1_Methods.Login_Methods;
 
 public class LoginPage_Validation extends BaseClass{
 
-	/* This Method to validate Login page */
+	/* This Method is to validate Login page */
 	@Test
 	public void Login_Test() throws InterruptedException {
 		Login_Methods lm = new Login_Methods(driver);

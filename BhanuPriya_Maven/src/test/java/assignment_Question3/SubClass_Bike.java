@@ -20,7 +20,7 @@ public class SubClass_Bike extends SuperClass_Cycle {
 		     public String toString() 
 		     { 
 		         return (super.toString()+ 
-		                 "\nseat height is "+seatHeight); 
+		                 "\nSeat height is "+seatHeight); 
 		     } 
 		     
 		     protected int applyBrake(int decrement) 

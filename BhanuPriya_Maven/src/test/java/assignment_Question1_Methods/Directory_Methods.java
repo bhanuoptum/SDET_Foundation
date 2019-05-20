@@ -69,18 +69,29 @@ public String getResultText(){
 		
 	}
 
+public void setEmpName(String name)
+{
+	empName.sendKeys(name);
+}
+	
+public String getEmpname()
+{
+	return empName.getText();
+}
+
 /* This Method is used to Search for a specific Directory in the Directory Page */
-public void SearchDirectory(){		
+public void SearchDirectory(String name){		
 		System.out.println("Click Directory");
 		directory.click();
 		System.out.println("set emp name as Linda from config file");
-		empName.sendKeys("Linda");
+		//empName.sendKeys("Linda");
+		setEmpName(name);
 		SelectByIndex(jobtitle,0);
 		SelectByIndex(location,0);
 		System.out.println("Click Search");
 		searchbtn.click();
 		System.out.println("Check Result text");
-		Assert.assertEquals(getResultText(), "Linda Anderson", "Result not Matching");
+		Assert.assertEquals(getResultText(), name, "Result not Matching");
 }
 
 /* This Method is used to Select the value from drop down by specific index*/	

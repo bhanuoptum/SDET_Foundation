@@ -17,7 +17,7 @@ public void Directory_Search() throws InterruptedException {
 		
 		Directory_Methods dm =new Directory_Methods(driver);
 		
-		dm.SearchDirectory();
+		dm.SearchDirectory(empname);
 		
 		System.out.println("Reset");
 		dm.ResetDirectory();

@@ -20,7 +20,7 @@ public class AssignLeave_Validation extends BaseClass{
 	  alm.GotoAssignLeave();
 	  System.out.println("Landed on Assign Leave page");
 	  System.out.println("Enter Details on Assign Leave Page");
-	  alm.AssignLeavePage();
+	  alm.AssignLeavePage(empName);
 	  
         
   }

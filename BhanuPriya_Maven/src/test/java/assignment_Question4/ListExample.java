@@ -8,6 +8,7 @@ import java.util.List;
 public class ListExample {
 			
 	public List<String> TestList(){
+		
 			List<String> tst = new ArrayList<>();
 		tst.add("Bhanu");
 		tst.add("Madhu");
@@ -16,8 +17,7 @@ public class ListExample {
 		tst.add("Ankit");
 		tst.add("Harish");
 		tst.add("Sahil");
-		tst.add("Sangeetha");
-	    
+		tst.add("Sangeetha");	    
 			return tst;
 	    						
 			}

@@ -5,9 +5,24 @@
 		<listener class-name="assignment_Question2.TestNG_Listeners" />
 	</listeners>
  <parameter name ="browser" value ="Chrome"/>
+	<test name="Login Page">
+			<classes>
+			<class name="assignment_Question1.LoginPage_Validation" />
+		</classes>
+	</test>
+	<test name="Directory Page">
+			<classes>
+			<class name="assignment_Question1.DirectoryPage_Validation" />
+		</classes>
+	</test>	
 	<test name="Admin Page">
 			<classes>
-			<class name="testScenarios.AdminPage_Validation" />
+			<class name="assignment_Question1.AdminPage_Validation" />
+		</classes>
+	</test>
+	<test name="AssignLeave Page">
+			<classes>
+			<class name="assignment_Question1.AssignLeave_Validation" />
 		</classes>
 	</test>
 	</suite> <!-- Suite -->

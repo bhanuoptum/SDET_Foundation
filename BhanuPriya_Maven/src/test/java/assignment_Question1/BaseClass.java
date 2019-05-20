@@ -18,19 +18,19 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
-
-import testUtilities.ReadConfig;
+import testUtilities.ReadProperty;
 
 
 public class BaseClass{
 	
-		ReadConfig readconfig=new ReadConfig();
+		ReadProperty readconfig=new ReadProperty();
 		
 		public String baseURL=readconfig.getApplicationURL();
 		public String username=readconfig.getUsername();
 		public String password=readconfig.getPassword();
 		public String empname=readconfig.getEmpName();
 		public String adminname=readconfig.getAdminName();
+		public String empName = readconfig.getempName();
 		 public static WebDriver driver ;
 		 public static WebDriverWait wait;
 		
@@ -83,7 +83,7 @@ public class BaseClass{
 		@AfterClass
 		public void tearDown()
 		{
-			//driver.quit();
+			driver.quit();
 		}
 		
 		

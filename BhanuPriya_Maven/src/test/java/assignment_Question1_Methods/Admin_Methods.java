@@ -62,7 +62,7 @@ public class Admin_Methods {
 	public
 	WebElement cancelbtn;
 	
-	@FindBy(how=How.XPATH, using="//a[contains(text(),'Tanaya')]")
+	@FindBy(how=How.XPATH, using="//a[contains(text(),'thomas.fleming')]")
 	@CacheLookup
 	public
 	WebElement resultname;
@@ -76,15 +76,20 @@ public class Admin_Methods {
 	{
 		return adminusername.getText();
 	}
-	public void SearchAdmin(){		
+	
+	public void setAdminName(String uname)
+	{
+		adminusername.sendKeys(uname);
+	}
+	public void SearchAdmin(String name){		
 		System.out.println("Click Admin tab");
 		admin.click();
 		System.out.println("Enter Admin name");
-		adminusername.sendKeys("Tanaya");
+		setAdminName(name);
 		System.out.println("Enter User Role");
 		SelectByIndex(adminuserrole,0);
 		adminsearchbtn.click();		
-		Assert.assertEquals(getResult(), "Tanaya","Result not Matching");
+		Assert.assertEquals(getResult(),name,"Result not Matching");
 	}
 
 	public void SelectByIndex(WebElement elem, int index){
@@ -94,7 +99,7 @@ public class Admin_Methods {
 	public void ResetAdmin(){
 		System.out.println("Click Reset");	
 		resetbtn.click();
-		Assert.assertEquals(getAdminname(), " ", "Result not matching");
+		//Assert.assertEquals(getAdminname(), " ", "Result not matching");
 	}
 
 	
